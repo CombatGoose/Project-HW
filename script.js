@@ -102,8 +102,8 @@ formChange.button.addEventListener('click', () => {
         name: formChange.newName.value
     }
 
-        axios.put(`http://localhost:4000/products/change-price?id=${formChangeData.id}`)
+        axios.put(`http://localhost:4000/products/change-name?id=${formChangeData.id}&name=${formChangeData.name}`)
             .then(res => {
-                console.log(res.data)
+                getProducts()
             })
 })
