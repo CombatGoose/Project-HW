@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    
     <div class="block">
         <input placeholder="Write product name" id="formName" type="text">
         <textarea id="formDescription" placeholder="Write product description"></textarea>
@@ -17,6 +16,28 @@
         <button class="formButton">Create</button>
     </div>
 
+    <div class="block">
+        <input id="takeId" type="text" placeholder="Write product ID">
+        <input placeholder="Write product name" id="changeName" type="text">
+        <button class="formButtonChange">Change</button>
+    </div>
+
+    <div class="products-block">
+        
+    </div>
+
+    <div class="pagination">
+        <div class="pagination_buttons">
+            <div id="paginationPrevButton"  class="pagination-element"><</div>
+            <div class="pagination-element active_pagination-element" paginationNumber = 1 >1</div>
+            <div class="pagination-element" paginationNumber = 2 >2</div>
+            <div class="pagination-element" paginationNumber = 3 >3</div>
+            <div class="pagination-element" paginationNumber = 4 >4</div>
+            <div class="pagination-element" paginationNumber = 5 >5</div>
+            <div id="paginationNextButton" class="pagination-element">></div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
 </body>
